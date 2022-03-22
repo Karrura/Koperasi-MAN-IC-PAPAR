@@ -1,0 +1,18 @@
+1. User (id, username, pass, role['Anggota', 'atasan', 'adm'], nama, tempat_lahir, tgl_lahir, alamat, nohp, foto, pekerjaan)
+- Adm -> seluruh menu (data master, transaksi, laporan)
+- Atasan -> transaksi, laporan
+- Anggota -> transaksi
+
+2. Pinjaman (id, id_user, tgl_pinjam, nominal, descr, tgl_lunas(setNULL), status)
+
+3. Angsuran (id, id_user, id_pinjam, tgl_byr, periode_bayar, nominal, keterangan, bukti_bayar)
+
+4. Simpanan (id, id_user, id_jenis, tgl_simpan, nominal, keterangan, bukti_bayar)
+
+5. Jenis (id, jenis, keterangan)
+
+6. Siswa (id, nisn, id_golongan, nama, gender, alamat, nama_ortu, hp)
+
+7. Golongan (id, golongan, uang_makan)
+
+8. Pembayaran (id, id_siswa, tgl_bayar, nominal, keterangan, bukti_bayar, status)
